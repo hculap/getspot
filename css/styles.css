@@ -1,0 +1,73 @@
+/* Existing styles */
+::selection {
+    background: #53F5C5;
+  }
+
+/* New styles for body text and headings */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    background: #fff;
+    min-height: 100vh;
+    font-size: 1rem; /* This sets the font size to the default root size, which is typically 16px in most browsers. */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'K2D', sans-serif;
+    color: #012b45;
+    font-weight: bold;  /* Making headings bold */
+}
+
+.scroll-arrow {
+    position: relative;
+    cursor: pointer;
+    left: 50%;
+    top: 4px;
+    animation: pulse 1s infinite;
+    display: none; /* by default the arrow is hidden */
+    text-align: center; /* center the text and the arrows */
+}
+
+/* Show the arrow on screens smaller than 992px */
+@media screen and (max-width: 991px) {
+    .scroll-arrow {
+        display: block;
+    }
+}
+
+.scroll-arrow .arrow {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    transform: translate(0, -10px) rotateZ(45deg);
+    border-bottom: 4px solid #53F5C5;
+    border-right: 4px solid #53F5C5;
+}
+
+.read-more {
+    font-size: 1em;
+    margin-bottom: 0.25em;
+    color: #53F5C5;
+}
+
+@keyframes pulse {
+    0% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -10px); }
+    100% { transform: translate(-50%, 0); }
+}
+
+.btn-primary {
+    background-color: #0CA2DF;
+    border-color: #0CA2DF;
+}
+
+.btn-primary:hover {
+    background-color: #53F5C5;
+    border-color: #53F5C5;
+}
+
+.form-primary {
+    background-color: #ffffff;
+    border-color: #0CA2DF;
+  }
