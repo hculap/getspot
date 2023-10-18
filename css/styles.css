@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
     border-color: #0CA2DF;
 }
 
-input:focus {
+.form-control:focus {
     outline: none;
     box-shadow: none; /* In case there's a box-shadow being applied */
 }
