@@ -7,7 +7,11 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #000000;
-    background: #fff;
+    background: rgb(217,241,208);
+    background: -moz-linear-gradient(to right bottom, rgba(217,241,208,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(to right bottom, rgba(217,241,208,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to right bottom, rgba(217,241,208,1) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d9f1d0",endColorstr="#ffffff",GradientType=1);
     min-height: 100vh;
     font-size: 1rem; /* This sets the font size to the default root size, which is typically 16px in most browsers. */
 }
@@ -18,15 +22,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;  /* Making headings bold */
 }
 
-.scroll-arrow {
-    position: relative;
-    cursor: pointer;
-    left: 50%;
-    top: 4px;
-    animation: pulse 1s infinite;
-    display: none; /* by default the arrow is hidden */
-    text-align: center; /* center the text and the arrows */
-}
+
 
 /* Show the arrow on screens smaller than 992px */
 @media screen and (max-width: 991px) {
